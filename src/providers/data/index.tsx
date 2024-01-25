@@ -14,3 +14,26 @@ export const client = new GraphQLClient(API_URL, {
     }
   }
 })
+
+// WebSocket client that will provide live data changes to the app via the 'Refine' component in App.tsx:
+export const wsClient =
+  typeof window !== "undefined"
+    ? createClient({
+        url: WS_URL,
+        connectionParams: () => {
+          const accessToken = localStorage.getItem("access_token");
+
+          return {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          };
+        },
+      })
+    : undefined;
+
+export const dataProvider = graphqlDataProvider(client);
+
+export const liveProvider = wsClient
+  ? graphqlLiveProvider(wsClient)
+  : undefined;
