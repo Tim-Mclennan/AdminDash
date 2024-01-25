@@ -34,6 +34,7 @@ export const authProvider: AuthBindings = {
       // save the accessToken in localStorage
       localStorage.setItem("access_token", data.login.accessToken);
 
+      // redirect to home page
       return {
         success: true,
         redirectTo: "/",
