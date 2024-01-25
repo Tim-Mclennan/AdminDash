@@ -1,6 +1,6 @@
 import { AuthPage } from "@refinedev/antd";
 
-export const Login = () => {
+const Login = () => {
   return (
     <AuthPage
       type="login"
@@ -10,3 +10,5 @@ export const Login = () => {
     />
   );
 };
+
+export default Login

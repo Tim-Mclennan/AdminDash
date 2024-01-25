@@ -12,6 +12,9 @@ import routerBindings, {
 import { App as AntdApp } from "antd";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { authProvider } from "./providers/auth";
+import { Home, Login } from "./pages";
+import { Register } from "./pages/register";
+import { ForgotPassword } from "./pages/forgotPassword";
 
 function App() {
   return (
@@ -35,6 +38,11 @@ function App() {
             >
               <Routes>
                 <Route index element={<WelcomePage />} />
+                <Route index element={<Home />} />
+                <Route path='/register' element={<Register />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/forgot-password' element={<ForgotPassword />} />
+
               </Routes>
               <UnsavedChangesNotifier />
               <DocumentTitleHandler />
