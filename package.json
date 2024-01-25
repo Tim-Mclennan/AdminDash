@@ -1,62 +1,55 @@
 {
-  "name": "app-crm-minimal",
+  "name": "admindashboard",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "refine dev",
-    "build": "tsc && cross-env NODE_OPTIONS=--max_old_space_size=4096 refine build",
-    "preview": "refine start",
-    "start:prod": "refine start",
-    "lint": "eslint src --fix",
-    "format": "prettier --write src",
-    "refine": "refine",
-    "codegen": "graphql-codegen"
-  },
+  "type": "module",
   "dependencies": {
-    "@ant-design/cssinjs": "^1.17.2",
-    "@ant-design/icons": "5.0.1",
-    "@ant-design/plots": "^1.2.5",
-    "@dnd-kit/core": "^6.0.8",
-    "@dnd-kit/modifiers": "^6.0.1",
-    "@dnd-kit/sortable": "^7.0.2",
-    "@refinedev/antd": "^5.37.2",
-    "@refinedev/cli": "^2.16.22",
-    "@refinedev/core": "^4.46.2",
-    "@refinedev/devtools": "^1.1.30",
-    "@refinedev/nestjs-query": "^1.1.1",
-    "@refinedev/react-router-v6": "^4.5.5",
-    "@uiw/react-md-editor": "^3.19.5",
-    "antd": "^5.0.5",
-    "classnames": "^2.3.2",
-    "cross-env": "^7.0.3",
-    "dayjs": "^1.10.7",
-    "graphql-ws": "^5.9.1",
-    "graphql-tag": "^2.12.6",
+    "@refinedev/cli": "^2.16.21",
+    "@refinedev/core": "^4.46.1",
+    "@refinedev/devtools": "^1.1.29",
+    "@refinedev/inferencer": "^4.5.16",
+    "@refinedev/kbar": "^1.3.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "@refinedev/nestjs-query": "^1.1.1",
+    "@refinedev/antd": "^5.37.1",
+    "antd": "^5.0.5",
+    "@ant-design/icons": "^5.0.1",
+    "@refinedev/react-router-v6": "^4.5.5"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^5.0.0",
-    "@graphql-codegen/typescript": "^4.0.1",
-    "@graphql-codegen/typescript-operations": "^4.0.1",
-    "@graphql-codegen/import-types-preset": "^3.0.0",
     "@types/node": "^18.16.2",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@typescript-eslint/parser": "5.48.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.1",
-    "cross-env": "^7.0.3",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "postcss": "^8.1.4",
-    "postcss-nesting": "^12.0.1",
-    "prettier": "^2.7.1",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
     "typescript": "^4.7.4",
-    "vite": "^4.3.1",
-    "vite-tsconfig-paths": "^4.2.1"
+    "vite": "^4.3.1"
+  },
+  "scripts": {
+    "dev": "refine dev",
+    "build": "tsc && refine build",
+    "preview": "refine start",
+    "refine": "refine"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "refine": {
+    "projectId": "KGfvct-CYNs6r-IK2UQq"
   }
 }
