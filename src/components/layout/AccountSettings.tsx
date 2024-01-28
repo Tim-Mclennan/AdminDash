@@ -1,20 +1,17 @@
 import { SaveButton, useForm } from "@refinedev/antd";
 import { HttpError } from "@refinedev/core";
 import { GetFields, GetVariables } from "@refinedev/nestjs-query";
-
 import { CloseOutlined } from "@ant-design/icons";
 import { Button, Card, Drawer, Form, Input, Spin } from "antd";
-
 import { getNameInitials } from "@/utilities";
 import { UPDATE_USER_MUTATION } from "@/graphql/mutations";
-
 import { Text } from "../text";
-import CustomAvatar from "../CustomAvatar";
 
 import {
   UpdateUserMutation,
   UpdateUserMutationVariables,
 } from "@/graphql/types";
+import { CustomAvatar } from "../custom-avatar";
 
 type Props = {
   opened: boolean;

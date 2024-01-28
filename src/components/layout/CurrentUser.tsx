@@ -1,11 +1,11 @@
 import { Button, Popover } from "antd"
-import CustomAvatar from "../CustomAvatar"
 import { useGetIdentity } from "@refinedev/core"
 import type { User } from '@/graphql/schema.types'
 import { Text } from "../text"
 import { SettingOutlined } from "@ant-design/icons"
 import React from "react"
 import { AccountSettings } from "./AccountSettings"
+import { CustomAvatar } from "../custom-avatar"
 
 const CurrentUser = () => {
   const [isOpen, setIsOpen] = React.useState(false);
