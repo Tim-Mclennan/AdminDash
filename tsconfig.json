@@ -14,7 +14,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    // Allows us to refer to specific files without using "../../" constantly:
+    "paths": {
+      "@/*": ["./*"],
+    },
   },
   "include": ["src", "vite.config.ts"],
   "references": [
