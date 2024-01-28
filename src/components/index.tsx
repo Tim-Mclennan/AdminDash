@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 // export * from "./accordion";
-// export * from "./custom-avatar";
+export * from "./custom-avatar";
 // export * from "./icon";
 export * from "./layout";
 // export * from "./pagination-total";
