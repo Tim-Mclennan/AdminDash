@@ -6,6 +6,8 @@ import {
   ShopOutlined,
 } from "@ant-design/icons";
 
+// This component will be used in the 'Refine' component in the App.tsx.
+
 // Resources can perform actions which are similar to CRUD operations:
 // list -> get all record (read)
 // show -> get a single record (read)
