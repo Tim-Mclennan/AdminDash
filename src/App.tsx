@@ -22,48 +22,48 @@ function App() {
   return (
     <BrowserRouter>
       <GitHubBanner />
-        <AntdApp>
-          <DevtoolsProvider>
-            <Refine
-              dataProvider={dataProvider}
-              liveProvider={liveProvider}
-              notificationProvider={useNotificationProvider}
-              routerProvider={routerBindings}
-              authProvider={authProvider}
-              options={{
-                syncWithLocation: true,
-                warnWhenUnsavedChanges: true,
-                useNewQueryKeys: true,
-                projectId: "KGfvct-CYNs6r-IK2UQq",
-                liveMode: "auto",
-              }}
-            >
-              <Routes>
-                <Route index element={<WelcomePage />} />
-                <Route index element={<Home />} />
-                <Route path='/register' element={<Register />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/forgot-password' element={<ForgotPassword />} />
-                <Route
-                  element={<Authenticated 
-                  key="authenticated-layout"
-                  // The fallback prop acts as a 'Catch'.
-                  fallback={<CatchAllNavigate to="/login" />}
-                  />
-                }
-                >
+      <AntdApp>
+        <DevtoolsProvider>
+          <Refine
+            dataProvider={dataProvider}
+            liveProvider={liveProvider}
+            notificationProvider={useNotificationProvider}
+            routerProvider={routerBindings}
+            authProvider={authProvider}
+            options={{
+              syncWithLocation: true,
+              warnWhenUnsavedChanges: true,
+              useNewQueryKeys: true,
+              projectId: "KGfvct-CYNs6r-IK2UQq",
+              liveMode: "auto",
+            }}
+          >
+            <Routes>
+              <Route path='/register' element={<Register />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/forgot-password' element={<ForgotPassword />} />
+              <Route
+                element={
+                  <Authenticated
+                    key="authenticated-layout"
+                    // The fallback prop acts as a 'Catch'.
+                    fallback={<CatchAllNavigate to="/login" />}
+                  >
                     <Layout>
-                      
                       <Outlet />
                     </Layout>
-                </Route>
-              </Routes>
-              <UnsavedChangesNotifier />
-              <DocumentTitleHandler />
-            </Refine>
-            <DevtoolsPanel />
-          </DevtoolsProvider>
-        </AntdApp>
+                  </Authenticated>
+                }
+              >
+                <Route index element={<Home />} />
+              </Route>
+            </Routes>
+            <UnsavedChangesNotifier />
+            <DocumentTitleHandler />
+          </Refine>
+          <DevtoolsPanel />
+        </DevtoolsProvider>
+      </AntdApp>
     </BrowserRouter>
   );
 }
