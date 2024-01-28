@@ -1,7 +1,7 @@
 import { AuthPage } from "@refinedev/antd";
 import { authCredentials } from "../../providers";
 
-const Login = () => {
+export const Login = () => {
   return (
     <AuthPage
       type="login"
@@ -11,5 +11,3 @@ const Login = () => {
     />
   );
 };
-
-export default Login

@@ -1,13 +1,10 @@
 import { useList } from "@refinedev/core";
 import { GetFieldsFromList } from "@refinedev/nestjs-query";
-
 import { CalendarOutlined } from "@ant-design/icons";
 import { Badge, Card, List, Skeleton as AntdSkeleton } from "antd";
 import dayjs from "dayjs";
-
 import { Text } from "@/components/text";
 import { DashboardCalendarUpcomingEventsQuery } from "@/graphql/types";
-
 import { DASHBORAD_CALENDAR_UPCOMING_EVENTS_QUERY } from "./queries";
 
 export const CalendarUpcomingEvents = () => {

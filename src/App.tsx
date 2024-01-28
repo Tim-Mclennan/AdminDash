@@ -1,4 +1,4 @@
-import { Authenticated, GitHubBanner, Refine, WelcomePage } from "@refinedev/core";
+import { Authenticated, GitHubBanner, Refine } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 
 import { useNotificationProvider } from "@refinedev/antd";
@@ -13,11 +13,11 @@ import routerBindings, {
 import { App as AntdApp } from "antd";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { authProvider } from "./providers/auth";
-import { Home, Login } from "./pages";
 import { Register } from "./pages/register";
 import { ForgotPassword } from "./pages/forgotPassword";
 import Layout from "./components/layout";
 import { resources } from "./config/resources";
+import { DashboardPage, Login } from "./pages";
 
 function App() {
   return (
@@ -57,7 +57,7 @@ function App() {
                   </Authenticated>
                 }
               >
-                <Route index element={<Home />} />
+                <Route index element={<DashboardPage />} />
               </Route>
             </Routes>
             <UnsavedChangesNotifier />
