@@ -17,7 +17,7 @@ import { Register } from "./pages/register";
 import { ForgotPassword } from "./pages/forgotPassword";
 import Layout from "./components/layout";
 import { resources } from "./config/resources";
-import { CompanyCreatePage, CompanyEditPage, CompanyListPage, DashboardPage as Home, Login } from "./pages";
+import { CompanyCreatePage, CompanyEditPage, CompanyListPage, DashboardPage as Home, Login, TasksCreatePage, TasksEditPage, TasksListPage } from "./pages";
 
 function App() {
   return (
