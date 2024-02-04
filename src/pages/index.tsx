@@ -2,4 +2,4 @@
 export * from "./companies";
 export * from "./home";
 export * from "./login";
-// export * from "./tasks";
+export * from "./tasks";

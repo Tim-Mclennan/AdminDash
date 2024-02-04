@@ -58,6 +58,17 @@ function App() {
                 }
               >
                 <Route index element={<Home />} />
+                <Route
+                    path="/tasks"
+                    element={
+                      <TasksListPage>
+                        <Outlet />
+                      </TasksListPage>
+                    }
+                  >
+                    <Route path="new" element={<TasksCreatePage />} />
+                    <Route path="edit/:id" element={<TasksEditPage />} />
+                  </Route>
                 <Route path="/companies">
                   <Route index element={<CompanyListPage />} />
                   <Route path="new" element={<CompanyCreatePage />} />
