@@ -17,7 +17,7 @@ import { Register } from "./pages/register";
 import { ForgotPassword } from "./pages/forgotPassword";
 import Layout from "./components/layout";
 import { resources } from "./config/resources";
-import { DashboardPage as Home, Login } from "./pages";
+import { CompanyCreatePage, CompanyEditPage, CompanyListPage, DashboardPage as Home, Login } from "./pages";
 
 function App() {
   return (
@@ -58,6 +58,11 @@ function App() {
                 }
               >
                 <Route index element={<Home />} />
+                <Route path="/companies">
+                  <Route index element={<CompanyListPage />} />
+                  <Route path="new" element={<CompanyCreatePage />} />
+                  <Route path="edit/:id" element={<CompanyEditPage />} />
+                </Route>
               </Route>
             </Routes>
             <UnsavedChangesNotifier />
