@@ -15,8 +15,8 @@ import { Task } from "@/graphql/schema.types";
 
 import { DescriptionForm } from "./forms/description/description-form";
 import { DescriptionHeader } from "./forms/description/description-header";
-import { DueDateForm } from "./forms/due-date/duedate-form";
-import { DueDateHeader } from "./forms/due-date/duedate-header";
+import { DueDateForm } from "./forms/due-date/due-date-form";
+import { DueDateHeader } from "./forms/due-date/due-date-header";
 import { StageForm } from "./forms/stage/stage-form";
 import { TitleForm } from "./forms/title/title-form";
 import { UsersForm } from "./forms/users/users-form";
