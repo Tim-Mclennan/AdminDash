@@ -22,7 +22,6 @@ import { CompanyCreatePage, CompanyEditPage, CompanyListPage, DashboardPage as H
 function App() {
   return (
     <BrowserRouter>
-      <GitHubBanner />
       <AntdApp>
         <DevtoolsProvider>
           <Refine
