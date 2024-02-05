@@ -8,7 +8,19 @@ You can explore the deployed version of AdminDashboard here:
 
 https://admin-dash-sb2t.vercel.app/
 
-## What I Learned
+## 📋 <a name="table">Table of Contents</a>
+
+1. 🚀 [Introduction](#AdminDashboard)
+2. 🎓 [What I Learned](#What-I-Learned)
+3. ⚙️ [Technologies Used](#Technologies-Used)
+4. 🛠️ [How to run AdminDashboard](#How-to-run-AdminDash)
+5. 📁 [Project Structure](#Project-Structure)
+6. 🌟 [Features](#Features)
+8. 🙌 [Acknowledgements](#Acknowledgements)
+9. 🚀 [About Me](#About-Me)
+10. 🔗 [Links](#-Links)
+
+## <a name="What-I-Learned">What I Learned</a>
 
 - Utilizing the Refine framework for rapid development of admin panels.
 - Implementing authentication and access control with industry-standard solutions.
@@ -17,14 +29,14 @@ https://admin-dash-sb2t.vercel.app/
 - Leveraging GraphQL for efficient data fetching and manipulation.
 - Deploying a full-stack application on Vercel.
 
-## Technologies Used
+## <a name="Technologies-Used">Technologies Used</a>
 
 - Frontend: React, TypeScript, Ant Design, @refinedev/core, GraphQL.
 - Backend: Node.js, Express.js (assumed for API interactions).
 - Database: (Assumed MongoDB or similar based on GraphQL usage).
 - Deployment: Vercel.
 
-## How to run AdminDash
+## <a name="How-to-run-AdminDash">How-to-run-AdminDash</a>
 
 ### Prerequisites
 
@@ -52,15 +64,11 @@ https://admin-dash-sb2t.vercel.app/
 
 The client runs on port 5000 by default, but this can be configured by setting the PORT environment variable in a .env file.
 
-## Project Structure
+## <a name="Project-Structure">Project Structure</a>
 
 The project is structured around the Refine framework's best practices, with the 'src' directory containing the main application code, including pages, components, and utilities. The public directory contains static assets like the index.html file and images.
 
-## Project Link:
-
- [https://github.com/Tim-Mclennan/AdminDash](https://github.com/Tim-Mclennan/AdminDash)
-
-## Features
+## <a name="Features">Features</a>
 
 AdminDashboard is designed to streamline the management and operational tasks of businesses through its intuitive interface and powerful features. Two key features of this application are the Company List and Task Pages, which are essential for users who need to manage company-related data and tasks efficiently.
 
@@ -72,18 +80,18 @@ The Company List page is a central feature that allows users to view, search, an
 
 The Task Pages are designed to help users manage their daily, weekly, or project-based tasks. Almost identical to a Kanban board, these pages allow for the creation, assignment, tracking, and completion of tasks. Features include setting deadlines, priorities, and assigning tasks to specific team members. The Task Pages are highly customizable, enabling users to categorize tasks based on projects, urgency, or any other criteria that suit their workflow. This feature is particularly useful for project managers and teams looking to streamline their task management processes.
 
-## Acknowledgements
+## <a name="Acknowledgements">Acknowledgements</a>
 
 - Refine
 - Ant Design
 - GraphQL
 - Vercel
 
-- ## 🚀 About Me
+## <a name="About-Me">🚀 About Me</a>
 I'm a Frontend developer that has a deep passion for user experience on the web. 
 
 Feel free to contact me with the links below!
 
-## 🔗 Links
+## <a name="Links">🔗 Links</a>
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Tim-Mclennan/My-Portfolio)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tim-mclennan-0563341aa/)
