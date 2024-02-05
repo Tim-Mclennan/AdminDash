@@ -6,6 +6,7 @@ import { SettingOutlined } from "@ant-design/icons"
 import React from "react"
 import { AccountSettings } from "./AccountSettings"
 import { CustomAvatar } from "../custom-avatar"
+import professionalheadshot from './professionalheadshot.jpg'
 
 const CurrentUser = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -59,7 +60,7 @@ const CurrentUser = () => {
       >
         <CustomAvatar
           name={user?.name}
-          src={user?.avatarUrl}
+          src={professionalheadshot}
           size="default"
           style={{ cursor: "pointer" }}
         />
