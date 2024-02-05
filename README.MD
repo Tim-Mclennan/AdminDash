@@ -2,7 +2,7 @@
 
 ![admindash](./src/demoScreenshot.PNG)
 
-AdminDashboard is a comprehensive admin panel and dashboard application built with the Refine framework. It leverages the power of React for building flexible and efficient user interfaces, providing a solid foundation for internal tools, admin panels, dashboards, and B2B applications.
+AdminDash is a comprehensive admin panel and dashboard application built with the Refine framework. It leverages the power of React for building flexible and efficient user interfaces, providing a solid foundation for internal tools, admin panels, dashboards, and B2B applications.
 
 You can explore the deployed version of AdminDashboard here:
 
