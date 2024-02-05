@@ -25,7 +25,7 @@ const CurrentUser = () => {
           padding: "12px 20px",
         }}
       >
-        {user?.name}
+        {'Tim Mclennan'}
       </Text>
       <div
         style={{
@@ -59,7 +59,7 @@ const CurrentUser = () => {
         overlayStyle={{ zIndex: 999 }}
       >
         <CustomAvatar
-          name={user?.name}
+          name={'Tim Mclennan'}
           src={professionalheadshot}
           size="default"
           style={{ cursor: "pointer" }}
