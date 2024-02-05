@@ -2,7 +2,7 @@
 
 ![admindash](./src/demoScreenshot.PNG)
 
-AdminDashboard is a comprehensive admin panel and dashboard application built with the Refine framework. It leverages the power of React for building flexible and efficient user interfaces, providing a solid foundation for internal tools, admin panels, dashboards, and B2B applications.
+AdminDash is a comprehensive admin panel and dashboard application built with the Refine framework. It leverages the power of React for building flexible and efficient user interfaces, providing a solid foundation for internal tools, admin panels, dashboards, and B2B applications.
 
 You can explore the deployed version of AdminDashboard here:
 
@@ -32,7 +32,7 @@ https://admin-dash-sb2t.vercel.app/
 ## <a name="Technologies-Used">Technologies Used</a>
 
 - Frontend: React, TypeScript, Ant Design, @refinedev/core, GraphQL.
-- Backend: Node.js, Express.js (assumed for API interactions).
+- Backend: Node.js
 - Database: (Assumed MongoDB or similar based on GraphQL usage).
 - Deployment: Vercel.
 
@@ -56,11 +56,11 @@ https://admin-dash-sb2t.vercel.app/
 
 ### Development Server
 
-`npm run dev`
+   `npm run dev`
 
 ### Production Build
 
-`npm run build`
+   `npm run build`
 
 The client runs on port 5000 by default, but this can be configured by setting the PORT environment variable in a .env file.
 
