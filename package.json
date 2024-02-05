@@ -8,6 +8,7 @@
     "@ant-design/icons": "^5.0.1",
     "@ant-design/plots": "^1.2.5",
     "@dnd-kit/core": "^6.1.0",
+    "@ngneat/falso": "^7.1.1",
     "@refinedev/antd": "^5.37.1",
     "@refinedev/cli": "^2.16.21",
     "@refinedev/core": "^4.46.1",

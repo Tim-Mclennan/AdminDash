@@ -1,5 +1,4 @@
 import { GetFieldsFromList } from "@refinedev/nestjs-query";
-
 import dayjs from "dayjs";
 
 import { DashboardDealsChartQuery } from "@/graphql/types";
@@ -8,7 +7,7 @@ type DealStage = GetFieldsFromList<DashboardDealsChartQuery>;
 
 type DealAggregate = DealStage["dealsAggregate"][0];
 
-interface MappedDealData {
+export interface MappedDealData {
   timeUnix: number;
   timeText: string;
   value: number;

@@ -8,6 +8,7 @@ import { Text } from "@/components";
 import { DashboardDealsChartQuery } from "@/graphql/types";
 import { DASHBOARD_DEALS_CHART_QUERY } from "./queries";
 import { mapDealsData } from "./utils";
+import { dummyDealData } from "./dummyDealData";
 
 export const DashboardDealsChart = () => {
   const { data } = useList<GetFieldsFromList<DashboardDealsChartQuery>>({
@@ -24,7 +25,7 @@ export const DashboardDealsChart = () => {
 
   const config: AreaConfig = {
     isStack: false,
-    data: dealData,
+    data: dealData ? dealData : dummyDealData,
     xField: "timeText",
     yField: "value",
     seriesField: "state",
