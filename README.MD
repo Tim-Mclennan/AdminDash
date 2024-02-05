@@ -20,7 +20,7 @@ https://admin-dash-sb2t.vercel.app/
 ## Technologies Used
 
 - Frontend: React, TypeScript, Ant Design, @refinedev/core, GraphQL.
-- Backend: Node.js, Express.js (assumed for API interactions).
+- Backend: Node.js
 - Database: (Assumed MongoDB or similar based on GraphQL usage).
 - Deployment: Vercel.
 
@@ -44,11 +44,11 @@ https://admin-dash-sb2t.vercel.app/
 
 ### Development Server
 
-`npm run dev`
+   `npm run dev`
 
 ### Production Build
 
-`npm run build`
+   `npm run build`
 
 The client runs on port 5000 by default, but this can be configured by setting the PORT environment variable in a .env file.
 
