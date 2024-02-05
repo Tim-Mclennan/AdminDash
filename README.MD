@@ -13,7 +13,7 @@ https://admin-dash-sb2t.vercel.app/
 1. 🚀 [Introduction](#AdminDashboard)
 2. 🎓 [What I Learned](#What-I-Learned)
 3. ⚙️ [Technologies Used](#Technologies-Used)
-4. 🛠️ [How to run AdminDashboard](#How-to-run-AdminDash)
+4. 🛠️ [How to run AdminDash](#How-to-run-AdminDash)
 5. 📁 [Project Structure](#Project-Structure)
 6. 🌟 [Features](#Features)
 8. 🙌 [Acknowledgements](#Acknowledgements)
