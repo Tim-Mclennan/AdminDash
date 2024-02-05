@@ -5,9 +5,7 @@ type Error = {
   statusCode: string;
 };
 
-// Sends a request to a given URL with specific options.
 const customFetch = async (url: string, options: RequestInit) => {
-  // retrieves the access token to set it in the authorisation header (check line 18)
   const accessToken = localStorage.getItem("access_token");
   const headers = options.headers as Record<string, string>;
 
@@ -17,15 +15,11 @@ const customFetch = async (url: string, options: RequestInit) => {
       ...headers,
       Authorization: headers?.Authorization || `Bearer ${accessToken}`,
       "Content-Type": "application/json",
-      // gets rid of CORS issues:
       "Apollo-Require-Preflight": "true",
     },
   });
 };
 
-// this function  wraps around the `customFetch` function - It sends a request using `customFetch`, clones the response, 
-// attempts to parse the body as JSON, checks for any GraphQL errors in the parsed body, and throws an error if found.
-// If no errors are found, it returns the original response.
 export const fetchWrapper = async (url: string, options: RequestInit) => {
   const response = await customFetch(url, options);
 
@@ -53,11 +47,11 @@ const getGraphQLErrors = (
   if ("errors" in body) {
     const errors = body?.errors;
     const messages = errors?.map((error) => error?.message)?.join("");
-    const code = errors?.[0]?.extensions?.code;
+    const code = errors?.[0]?.extensions?.code as string;
 
     return {
       message: messages || JSON.stringify(errors),
-      statusCode: code || 500,
+      statusCode: code || '500',
     };
   }
 
